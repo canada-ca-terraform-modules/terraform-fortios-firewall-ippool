@@ -1,4 +1,21 @@
 <!-- BEGIN_TF_DOCS -->
+## Usage
+```hcl
+module "my_ip_pools" {
+  source = "https://github.com/canada-ca-terraform-modules/terraform-fortios-firewall-ippool"
+  providers = {
+    fortios = fortios.my_alias
+  }
+
+  my_ippools = {
+    RFC_1918_pool_1 = {
+      startip = "10.2.2.2"
+      endip   = "10.2.2.254"
+    }
+  }
+}
+```
+
 ## Requirements
 
 | Name | Version |
@@ -33,4 +50,7 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_ippools"></a> [ippools](#output\_ippools) | n/a |
+
+## Note
+This module does not contain all optional parameters. More can be found at https://registry.terraform.io/providers/fortinetdev/fortios/latest/docs/resources/fortios_firewall_ippool and added main.tf and variables.tf as needed. 
 <!-- END_TF_DOCS -->
