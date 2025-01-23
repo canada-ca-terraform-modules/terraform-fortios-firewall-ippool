@@ -52,5 +52,5 @@ No modules.
 | <a name="output_ippools"></a> [ippools](#output\_ippools) | n/a |
 
 ## Note
-This module does not contain all optional parameters. More can be found at https://registry.terraform.io/providers/fortinetdev/fortios/latest/docs/resources/fortios_firewall_ippool and added main.tf and variables.tf as needed. 
+This module does not contain all optional parameters. More can be found at https://registry.terraform.io/providers/fortinetdev/fortios/latest/docs/resources/fortios_firewall_ippool and added to main.tf and variables.tf as needed. 
 <!-- END_TF_DOCS -->
